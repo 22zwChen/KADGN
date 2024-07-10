@@ -1,0 +1,41 @@
+# KADGN
+This repository provides PyTorch implementations of **KADGN** as described in the paper: **Knowledge Augmented Dual-attention Gating Network in Knowledge Graph for Link Prediction**.
+
+
+![KADGN](./framework.png)
+
+## Experiment Environment
+- python 3.7.13
+- torch 1.12.1+cu113
+- scipy 1.7.3
+- wheel 0.38.4
+- numpy 1.21.6
+
+
+
+## Basic Usage
+
+### Reproduce the results
+Now you are ready to train and evaluate KADGN. To reproduce the results provided in the paper, please execute the corresponding command for each dataset as follows:
+
+#### FB15k-237
+    python train.py --data FB15k-237 --epoch 1000 --batch 128 --gcn_drop 0.6 --embed_dim 300 --num_heads 3
+
+#### WN18RR
+    python train.py --data WN18RR --epoch 800 --batch 128 --gcn_drop 0.5 --embed_dim 200 --num_heads 1
+    
+#### Kinship
+    python train.py --data kinship --epoch 1000 --batch 128 --gcn_drop 0.4 --embed_dim 300 --num_heads 3
+
+#### Spotify
+    python train.py --data spotify --epoch 1000 --batch 512 --gcn_drop 0.5 --embed_dim 200 --num_heads 3
+
+#### Credit
+    python train.py --data credit --epoch 1000 --batch 128 --gcn_drop 0.5 --embed_dim 300 --num_heads 3
+
+
+
+
+
+## Acknowledgement
+We refer to the code of [D-AEN](https://github.com/hcfun/D-AEN) and [RAKGE](https://github.com/learndatalab/RAKGE). Thanks for their contributions.
