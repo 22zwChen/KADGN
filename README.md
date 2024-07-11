@@ -17,6 +17,7 @@ This repository provides PyTorch implementations of **KADGN** as described in th
 
 ### preparations
 Since github can't create empty folders, you need to create some folders under the current path before running the code and execute the command as follows:
+
     mkdir log ranks ranks_index_top10 results results_index_top10 torch_saved
     
 ### Reproduce the results
