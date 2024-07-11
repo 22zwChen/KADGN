@@ -2,7 +2,7 @@
 This repository provides PyTorch implementations of **KADGN** as described in the paper: **Knowledge Augmented Dual-attention Gating Network in Knowledge Graph for Link Prediction**.
 
 
-<img src="(https://github.com/22zwChen/KADGN/blob/master/framework.png)" alt="framework" width="600">
+![framework](https://github.com/22zwChen/KADGN/blob/07ffcc09b47808bce4d3c606e7680c8c4a554e5e/framework.png)
 
 ## Experiment Environment
 - python 3.7.13
